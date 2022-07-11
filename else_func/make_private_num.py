@@ -3,7 +3,7 @@ import datetime
 
 #생년, 성별을 인수로 받아 임의의 주민등록번호 생성
 def make_private_num(age, gen):
-    if len(age) == 1:
+    if len(str(age)) == 1:
         age = "0" + str(age)
     if gen >= 1 and gen<= 2:
         year = "19" + str(age)
