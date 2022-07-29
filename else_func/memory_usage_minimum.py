@@ -26,6 +26,7 @@ def mem_min(data_path):
             tmp_max = data_tmp.max()[0]
             tmp_min = data_tmp.min()[0]
             if 'int' in e:
+                #Copula 모듈 uint 형식 인식 불가
                 if tmp_min >= 0 and tmp_max <= 255:
                     data_dtypes[i] = 'uint8'
                 elif tmp_min >= 0 and tmp_max <= 65535:

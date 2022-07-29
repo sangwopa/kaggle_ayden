@@ -18,6 +18,4 @@ save_name = "testing_file_model.pkl"
 
 data = load(file_path + save_name)
 
-
-
 print(data)
